@@ -409,7 +409,7 @@ fi
 
 # set the port numbers with --publish
 if [ -z "$PORT" ]; then
-    export PUBLISH_PORT="--publish 80"
+    export PUBLISH_PORT="" # --publish 80"
 else
     export PUBLISH_PORT=$(get_port_numbers "${PORT}")
 fi
